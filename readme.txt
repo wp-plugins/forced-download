@@ -3,24 +3,25 @@ Contributors: Aaron Reimann
 Donate link: http://sideways8.com/donate
 Tags: download, force, forced
 Requires at least: 3.0
-Tested up to: 3.1
+Tested up to: 3.1.1
+Stable 1.0.2
 
-This forces a download (vs. show up in your browser) for any "a href" that has the class "forced-download".  This should work with pdf,doc,xls,ppt,gif,png,jpg,mp3,wav,mpg,mov,avi,etc. ...etc... etc...
+This forces a download (vs. show up in your browser) for any "a href" that has the class "forced-download".
 
 == Description ==
-Force a user to download a file instead of them being opened in a browser.  For example, a .mov would not open in the browser, it will ask you to save it.  All you have to do is change the <a href=""> to be in the class "forced-download".
+Force a user to download a file instead of them being opened in a browser.  For example, a .mov would not open in the browser, it will ask you to save it.  All you have to do is change the &lt;a href=""&gt; to be in the class "forced-download". So simply add class="forced-download" to the link and you are good to go.
 
 
 == Installation ==
 
 Unzip and upload the plugin into the plugins directory and then activate it.  Once it is active, you can change a "a href" from:
 
-<a href="mysite.com/wp-content/uploads/something.jpg">Download my picture</a>
+&lt;a href="mysite.lan/wp-content/uploads/something.jpg"&gt;Download my picture&lt;/a&gt;
 to
-<a href="mysite.com/wp-content/uploads/something.jpg" class="forced-download">Download my picture</a>
+&lt;a href="mysite.lan/wp-content/uploads/something.jpg" class="forced-download"&gt;Download my picture&lt;/a&gt;
 
 Then the user will be prompted to download it, instead of it being displayed in the browser.
-This should work with: pdf,doc,xls,ppt,gif,png,jpg,mp3,wav,mpg,mov,avi, etc....etc...etc...
+This should work with: pdf,doc,xls,ppt,gif,png,jpg,mp3,wav,mpg,mov,avi, etc.
 
 
 == Frequently Asked Questions ==
