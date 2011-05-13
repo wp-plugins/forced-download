@@ -3,7 +3,7 @@
 Plugin Name: Forced Download
 Plugin URI: http://www.sideways8.com/plugins/forced-download
 Description: This forces a download (vs. show up in your browser) for any "a href" that has the class "forced-download".  Works for jpg, pdf, doc, mp3, etc.
-Version: 1.0.2
+Version: 1.0.4
 Author: Aaron Reimann
 Author URI: http://www.aaronreimann.com
 License: GPL3

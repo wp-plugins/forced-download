@@ -1,9 +1,22 @@
 <?php
 // this will give us access to all of the WP functions
-if (file_exists('../../../wp-blog-header.php')) {
+// really weird that people would move the wp-content folder (but whatever)
+// now i have to find the wp-blog-header.php
+if (file_exists('../../../wp-blog-header.php')) { // normal location
 	require_once('../../../wp-blog-header.php');
+} elseif (file_exists('../../wp-blog-header.php')) {
+	require_once('../../wp-blog-header.php');
+} elseif (file_exists('../wp-blog-header.php')) { // should never be here
+	require_once('../wp-blog-header.php');
+} elseif (file_exists('../../../../wp-blog-header.php')) { // even further in
+	require_once('../../../../wp-blog-header.php');
+} elseif (file_exists('../../../../../wp-blog-header.php')) { // even further in
+	require_once('../../../../../wp-blog-header.php');
+} elseif (file_exists('../../../../../../wp-blog-header.php')) { // even further in
+	require_once('../../../../../../wp-blog-header.php');
 } else {
-	echo 'Unable to locate the CMS.  "Forced Download" can not function without the CMS libraries.';
+	echo 'Unable to locate the CMS.  "Forced Download" can not function without the CMS libraries.<br />';
+	echo 'Chances are you moved where wp-content resides.  This can be fixed manually.  Contact the plugin developer for help.';
 	exit();
 }
 
