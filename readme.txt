@@ -4,7 +4,7 @@ Donate link: http://sideways8.com/donate
 Tags: download, force, forced
 Requires at least: 3.0
 Tested up to: 3.1.1
-Stable 1.0.2
+Stable 1.0.4
 
 This forces a download (vs. show up in your browser) for any "a href" that has the class "forced-download".
 
@@ -26,7 +26,12 @@ This should work with: pdf,doc,xls,ppt,gif,png,jpg,mp3,wav,mpg,mov,avi, etc.
 
 == Frequently Asked Questions ==
 
-None so far.
+Why can't I get this to work?<br />
+Chances are you moved where wp-content resides.  I have tried to modify my plugin to find the file 'wp-blog-header.php' in the root of your WordPress install.  There is a file in the plugin called download.php.  Because this plugin directly calls download.php, it really needs to know where WordPress is.
+<br />
+<br />
+Why am I getting a '404 Error' or 'File Not Found' error?<br />
+Because some hosting is a little more strict, and some security plugins stop you from accessing download.php directly, you will get this error.  I am more than willing to help you, you still can get this to work but you will have to tweak the plugin.<br />
 
 
 == What browsers does this work in? ==
